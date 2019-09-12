@@ -21,7 +21,7 @@ tess=turtle.Turtle()
 carol=turtle.Turtle()
 nic=turtle.Turtle()
 lisa=turtle.Turtle()
-mary=turtle.Turtle
+mary=turtle.Turtle()
 
 #defining functions:
     #building blocks: diamond (size)
@@ -79,6 +79,7 @@ nic.pencolor("darkgreen")
 nic.pensize (2)
 circle(nic,10)
 
+lisa.pensize(2)
 lisa.penup()
 lisa.left(90)
 lisa.forward(90)
@@ -89,14 +90,19 @@ lisa.pencolor("darkgreen")
 circle(lisa,10)
 
 mary.penup()
-mary.left(-90)
-# lisa.forward(-90)
-# lisa.right(-90)
-# lisa.forward(90)
-# lisa.pendown()
-# lisa.pencolor("darkgreen")
-# circle(lisa,10)
+mary.pensize(2)
+mary.pencolor("darkgreen")
+mary.forward(-90)
+mary.left(90)
+mary.forward(90)
+mary.pendown()
+circle(mary,10)
 
+mary.hideturtle()
+lisa.hideturtle()
+nic.hideturtle()
+carol.hideturtle()
+tess.hideturtle()
 
 
 window.exitonclick()
