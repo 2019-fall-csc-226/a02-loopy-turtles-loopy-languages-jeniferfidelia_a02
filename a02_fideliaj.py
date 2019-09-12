@@ -4,11 +4,14 @@
 #
 
 # Assignment: A02: Exploring Turtles in Python
-# Purpose: Practice using turtles and loops
+# Purpose: Practice using turtles and loops. Drawing A Turtle
 ######################################################################
 # licensed under a Creative Commons
 # Attribution-Noncommercial-Share Alike 3.0 United States License.
 ######################################################################
+
+
+#P.S: I AM GOING TO DRAW A TURTLE
 
 import turtle
 
@@ -24,8 +27,8 @@ lisa=turtle.Turtle()
 mary=turtle.Turtle()
 
 #defining functions:
-    #building blocks: diamond (size)
-    # fullcircle (radius)
+
+# making circle (radius)
 
 def circle (t,radius):
     t.pencolor ("darkgreen")
@@ -34,6 +37,7 @@ def circle (t,radius):
     t.left(45)
     t.circle(radius)
 
+#making the diamond shell of the turtle (size)
 
 def diamond (t , size):
     t.pensize(2)
@@ -52,6 +56,7 @@ def diamond (t , size):
 diamond (tess, 100)
 circle(tess, -72)
 
+#making the turtle's shell/body and head
 tess.left (90)
 tess.penup()
 tess.forward (17)
@@ -65,6 +70,8 @@ tess.pendown()
 
 diamond(tess,33)
 
+#making the little circle 1/ the first feet
+
 carol.penup()
 carol.forward(90)
 carol.pendown()
@@ -72,12 +79,16 @@ carol.pencolor("darkgreen")
 carol.pensize (2)
 circle(carol,-10)
 
+#making the little circle 2/ the second feet
+
 nic.penup()
 nic.forward(-90)
 nic.pendown()
 nic.pencolor("darkgreen")
 nic.pensize (2)
 circle(nic,10)
+
+#making the little circle 3/ the third feet
 
 lisa.pensize(2)
 lisa.penup()
@@ -89,6 +100,8 @@ lisa.pendown()
 lisa.pencolor("darkgreen")
 circle(lisa,10)
 
+#making the little circle 4/ the fourth feet
+
 mary.penup()
 mary.pensize(2)
 mary.pencolor("darkgreen")
@@ -98,6 +111,8 @@ mary.forward(90)
 mary.pendown()
 circle(mary,10)
 
+
+#hide the turtles so they wont show on the picture
 mary.hideturtle()
 lisa.hideturtle()
 nic.hideturtle()
